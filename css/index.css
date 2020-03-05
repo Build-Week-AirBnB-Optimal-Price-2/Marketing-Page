@@ -139,7 +139,7 @@ table {
   box-sizing: border-box;
 }
 html {
-  font-size: 62.5%;
+  font-size: 20px;
 }
 html,
 body {
@@ -154,19 +154,24 @@ h5 {
   font-family: 'Raleway', sans-serif;
 }
 h1 {
-  font-size: 6rem;
+  font-size: 3em;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 2.5em;
   padding-bottom: 10px;
 }
 h4 {
-  font-size: 2.5rem;
+  font-size: 2em;
   padding-bottom: 10px;
 }
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 1.5em;
+  padding-bottom: 10px;
+}
+a {
+  line-height: 1.5;
+  font-size: 1.5em;
   padding-bottom: 10px;
 }
 img {
@@ -188,6 +193,11 @@ header {
   width: 100%;
   height: auto;
 }
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+  }
+}
 header .globe {
   display: flex;
   position: relative;
@@ -197,19 +207,18 @@ header .header1 {
   flex-direction: row;
 }
 .navtag {
-  border: 2px solid red;
   display: flex;
   justify-content: space-evenly;
   margin: 5% 0;
 }
 .navtag a {
   text-decoration: none;
-  font-size: 3rem;
   color: #470b97;
 }
 h1 {
   display: flex;
   text-align: center;
+  color: #0f2bce;
   margin: 5% 0;
 }
 footer {
@@ -219,7 +228,11 @@ footer {
 }
 footer P {
   color: #0f2bce;
-  font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
+  }
 }
 .centerstage {
   display: flex;
@@ -227,8 +240,8 @@ footer P {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: max-content;
-  height: 50vh;
+  width: 100%;
+  height: 60vh;
 }
 .centerstage .centerstagetext {
   display: flex;
@@ -302,27 +315,26 @@ footer P {
 }
 #headerabt {
   display: flex;
+  justify-content: center;
   align-items: center;
-  height: 15vh;
   text-align: center;
+  height: 15vh;
   width: 100%;
-  margin: 5% 0;
+  height: auto;
 }
 #headerabt .globeabt {
-  width: 10% !important;
-  height: 10% !important;
-  margin: 2% 0;
+  display: flex;
+  position: relative;
+  right: 10%;
 }
 #headerabt .header1abt {
-  border: 2px sold red;
-  display: flex;
   flex-direction: row;
-  margin: 0;
 }
 #headerabt .header1abt h1 {
   display: flex;
   text-align: center;
   margin: 5% 0;
+  color: #0f2bce;
 }
 .navtagabt {
   display: flex;
@@ -331,34 +343,40 @@ footer P {
 }
 .navtagabt a {
   text-decoration: none;
-  font-size: 3rem;
   color: #470b97;
 }
 #bodyabout p {
   font-size: 2rem;
 }
 .whoweare {
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image: linear-gradient(to bottom, rgba(71, 11, 151, 0.4), rgba(161, 103, 121, 0.4), transparent), url(../imiges/rahul.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
 }
 .whoweare h1 {
   margin: 3% 0;
+  color: #FFFFFF;
+}
+.whoweare #p1 {
+  color: #FFFFFF;
 }
 .about img {
   border-radius: 50%;
   margin: 5% 0;
 }
 .about .globeabout {
-  border: 2px solid red;
   display: flex;
   justify-content: center;
 }
 .about .projecthead {
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -368,11 +386,23 @@ footer P {
   width: 40%;
 }
 .about .projecthead h2 {
-  margin: 5% 0;
+  margin: 0 0 1% 0;
+  color: #aa25c1;
+}
+.about .projecthead p {
+  font-size: 2em;
+  margin: 0 0 2% 0;
+  color: #a16779;
 }
 .about .webb {
   display: flex;
-  height: 50vh;
+  width: 100%;
+  height: 80vh;
+  margin: 5% 0 0 0;
+}
+.about .webb p {
+  font-size: 2rem;
+  color: #a16779;
 }
 .about .webb img {
   height: auto;
@@ -380,6 +410,12 @@ footer P {
 }
 .about .DataS {
   display: flex;
+  width: 100%;
+  height: 80vh;
+}
+.about .DataS p {
+  font-size: 2rem;
+  color: #a16779;
 }
 .about .DataS img {
   height: auto;
@@ -393,13 +429,14 @@ footer P {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 50vh;
+  height: auto;
 }
 .about .Riley h2,
 .about .Ronald h2,
 .about .Isaac h2,
 .about .Daniel h2 {
   margin: 15% 0;
+  color: #aa25c1;
 }
 .about .Nick,
 .about .Neal,
@@ -416,13 +453,18 @@ footer P {
 .about .Julie h2,
 .about .Amer h2 {
   margin: 10% 0;
+  color: #aa25c1;
 }
 footer {
   display: flex;
   justify-content: center;
   margin: 5%;
 }
-footer P {
+footer .footer1 {
   color: #0f2bce;
-  font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
+  }
 }

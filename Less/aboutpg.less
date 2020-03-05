@@ -1,23 +1,35 @@
 #bodyabout{
     p{
         font-size: 2rem;
+
     }
 }
 
 .whoweare{
-    border: 2px solid red;
+   
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
+background-image: linear-gradient(to bottom, rgba(71 ,11 ,151,.40),rgba(161,103,121,.40) , transparent) , url(../imiges/rahul.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+width: 100%;
+height: 80vh;
 
 h1{
     margin: 3% 0;
+    color: @white;
+}
+#p1{
+    color: @white;
 }
 }
 
 .about{
+
     img{
         border-radius: 50%;
         margin: 5% 0;
@@ -25,33 +37,46 @@ h1{
     }
 
     .globeabout{
-        border: 2px solid red;
+        
         display: flex;
         justify-content: center;
         
     }
 
     .projecthead{
-        border: 2px solid red;
         display: flex;
         flex-direction: column;
         align-items: center;
        
-
+        
         img{
             height: auto;
             width: 40%;
         }
 
         h2{
-            margin: 5% 0;
+            margin: 0 0 1% 0;
+            color: @violet;
+        }
+        p{
+            font-size: 2em;
+            margin: 0 0 2% 0;
+            color:@lightgreyred;
+    
         }
     }
 
     .webb{
-        
         display: flex;
-        height: 50vh;
+        width: 100%;
+        height: 80vh;
+        margin: 5% 0 0 0;
+
+        p{
+            font-size: 2rem;
+            color:@lightgreyred;
+    
+        }
 
         img{
            
@@ -63,6 +88,14 @@ h1{
 
     .DataS{
         display: flex;
+        width: 100%;
+        height: 80vh;
+
+        p{
+            font-size: 2rem;
+            color:@lightgreyred;
+    
+        }
 
         img{
            
@@ -73,16 +106,16 @@ h1{
     }
 
     .Riley, .Ronald, .Isaac, .Daniel{
- 
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        height:50vh;
+        height:auto;
 
 
         h2{
             margin: 15% 0;
+            color: @violet;
         }
     }
 
@@ -96,6 +129,7 @@ h1{
 
         h2{
             margin: 10% 0;
+            color: @violet;
         }
     }
 }

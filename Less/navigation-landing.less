@@ -7,12 +7,22 @@ header{
     height: 15vh;
     width: 100%;
     height: auto;
+
+    
+    @media @phone{
+        width: 100%;
+    }
    
    .globe{
        
        display: flex;
        position: relative;
        right:10%;
+
+       
+    @media @phone{
+        width: 100%;
+    }
    }
 
     .header1{
@@ -27,7 +37,7 @@ header{
 }
 
 .navtag{
-        border: 2px solid red;
+        
         display: flex;
         justify-content: space-evenly;
         margin: 5% 0;
@@ -35,7 +45,6 @@ header{
 
     a{ 
         text-decoration: none;
-        font-size: 3rem;
         color: @darkpurple;
     }
 
@@ -45,5 +54,6 @@ h1{
    
     display: flex;
     text-align: center;
+    color: @blue;
     margin: 5% 0;
 }
