@@ -187,8 +187,12 @@ header {
   width: 100%;
   margin: 5% 0;
 }
+header .globe {
+  width: 10% !important;
+  height: 10% !important;
+  margin: 2.5% 0;
+}
 header .header1 {
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -199,14 +203,23 @@ header .header1 h1 {
   margin: 5% 0;
 }
 header .navtag {
-  border: 2px solid red;
   display: flex;
   justify-content: space-evenly;
   margin: 5% 0;
 }
 header .navtag a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: #470b97;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+footer P {
+  color: #0f2bce;
+  font-size: 2.5rem;
 }
 .centerstage {
   display: flex;
@@ -228,7 +241,6 @@ header .navtag a {
 .placee-holder-for-thinking-code {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 }
 .placee-holder-for-thinking-code .mapfull {
   display: flex;
@@ -280,5 +292,5 @@ header .navtag a {
 .trusted .trustedimg {
   display: flex;
   flex-direction: row;
-  max-width: 45%;
+  max-width: 50%;
 }
