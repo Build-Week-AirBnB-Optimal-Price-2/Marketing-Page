@@ -181,36 +181,36 @@ img {
 /*components here*/
 header {
   display: flex;
-  justify-content: space-evenly;
-  height: 15vh;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  height: 15vh;
   width: 100%;
-  margin: 5% 0;
+  height: auto;
 }
 header .globe {
-  width: 10% !important;
-  height: 10% !important;
-  margin: 2.5% 0;
+  display: flex;
+  position: relative;
+  right: 10%;
 }
 header .header1 {
-  display: flex;
   flex-direction: row;
-  margin: 0;
 }
-header .header1 h1 {
-  display: flex;
-  text-align: center;
-  margin: 5% 0;
-}
-header .navtag {
+.navtag {
+  border: 2px solid red;
   display: flex;
   justify-content: space-evenly;
   margin: 5% 0;
 }
-header .navtag a {
+.navtag a {
   text-decoration: none;
   font-size: 3rem;
   color: #470b97;
+}
+h1 {
+  display: flex;
+  text-align: center;
+  margin: 5% 0;
 }
 footer {
   display: flex;
@@ -299,4 +299,130 @@ footer P {
   display: flex;
   flex-direction: row;
   max-width: 50%;
+}
+#headerabt {
+  display: flex;
+  align-items: center;
+  height: 15vh;
+  text-align: center;
+  width: 100%;
+  margin: 5% 0;
+}
+#headerabt .globeabt {
+  width: 10% !important;
+  height: 10% !important;
+  margin: 2% 0;
+}
+#headerabt .header1abt {
+  border: 2px sold red;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+#headerabt .header1abt h1 {
+  display: flex;
+  text-align: center;
+  margin: 5% 0;
+}
+.navtagabt {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5% 0;
+}
+.navtagabt a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: #470b97;
+}
+#bodyabout p {
+  font-size: 2rem;
+}
+.whoweare {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.whoweare h1 {
+  margin: 3% 0;
+}
+.about img {
+  border-radius: 50%;
+  margin: 5% 0;
+}
+.about .globeabout {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+}
+.about .projecthead {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .projecthead img {
+  height: auto;
+  width: 40%;
+}
+.about .projecthead h2 {
+  margin: 5% 0;
+}
+.about .webb {
+  display: flex;
+  height: 50vh;
+}
+.about .webb img {
+  height: auto;
+  width: 90%;
+}
+.about .DataS {
+  display: flex;
+}
+.about .DataS img {
+  height: auto;
+  width: 90%;
+}
+.about .Riley,
+.about .Ronald,
+.about .Isaac,
+.about .Daniel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 50vh;
+}
+.about .Riley h2,
+.about .Ronald h2,
+.about .Isaac h2,
+.about .Daniel h2 {
+  margin: 15% 0;
+}
+.about .Nick,
+.about .Neal,
+.about .Julie,
+.about .Amer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 50vh;
+}
+.about .Nick h2,
+.about .Neal h2,
+.about .Julie h2,
+.about .Amer h2 {
+  margin: 10% 0;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+footer P {
+  color: #0f2bce;
+  font-size: 2.5rem;
 }
