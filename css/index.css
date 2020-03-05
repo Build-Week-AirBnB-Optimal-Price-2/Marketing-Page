@@ -244,14 +244,29 @@ header .navtag a {
   bottom: 40px;
   margin: 0 0 0 2%;
 }
-.prop,
-.Investor,
-.Tourism {
+.placee-holder-for-thinking-code .thinkingcode h2 {
+  color: #aa25c1;
+}
+.placee-holder-for-thinking-code .thinkingcode p {
+  color: #a16779;
+}
+.box .prop,
+.box .Investor,
+.box .Tourism {
   margin: 5% 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.box .prop P,
+.box .Investor P,
+.box .Tourism P {
   text-align: left;
+  color: #a16779;
+}
+.box h2 {
+  font-weight: bold;
+  color: #aa25c1;
 }
 .trusted {
   display: flex;
@@ -260,9 +275,10 @@ header .navtag a {
 .trusted .trusttext {
   display: flex;
   justify-content: center;
+  color: #a16779;
 }
 .trusted .trustedimg {
   display: flex;
   flex-direction: row;
-  max-width: 50%;
+  max-width: 45%;
 }
