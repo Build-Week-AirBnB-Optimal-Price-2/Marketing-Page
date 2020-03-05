@@ -262,6 +262,12 @@ footer P {
 .placee-holder-for-thinking-code .thinkingcode p {
   color: #a16779;
 }
+.placee-holder-for-thinking-code .thinkingcode .p0 {
+  margin: 0 0 0 5%;
+}
+.placee-holder-for-thinking-code .thinkingcode .p1 {
+  margin: 0 0 0 10%;
+}
 .box .prop,
 .box .Investor,
 .box .Tourism {
