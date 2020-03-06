@@ -1,10 +1,20 @@
 /*vars and mixins */
 @media (max-width: 500px) {
   width: 100%;
-  height: 80px;
+  height: auto;
+  max-width: 100%;
 }
 .border {
   border: 1px solid red;
+}
+.disflex {
+  display: flex;
+}
+.textcenter {
+  text-align: center;
+}
+.width100 {
+  width: 100%;
 }
 /*general styles here*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -156,23 +166,53 @@ h5 {
 h1 {
   font-size: 3em;
 }
+@media (max-width: 500px) {
+  h1 {
+    width: 100%;
+    font-size: 1.5em;
+  }
+}
 h2 {
   font-size: 2.5em;
   padding-bottom: 10px;
 }
+@media (max-width: 500px) {
+  h2 {
+    width: 100%;
+    font-size: 1em;
+  }
+}
 h4 {
   font-size: 2em;
   padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  h4 {
+    width: 100%;
+    font-size: 1em;
+  }
 }
 p {
   line-height: 1.5;
   font-size: 1.5em;
   padding-bottom: 10px;
 }
+@media (max-width: 500px) {
+  p {
+    width: 100%;
+    font-size: 0.75em;
+  }
+}
 a {
   line-height: 1.5;
   font-size: 1.5em;
   padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  a {
+    width: 100%;
+    font-size: 0.75em;
+  }
 }
 img {
   max-width: 100%;
@@ -189,7 +229,6 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 15vh;
   width: 100%;
   height: auto;
 }
@@ -203,8 +242,11 @@ header .globe {
   position: relative;
   right: 10%;
 }
-header .header1 {
-  flex-direction: row;
+@media (max-width: 500px) {
+  header .globe {
+    width: 100%;
+    display: none;
+  }
 }
 .navtag {
   display: flex;
@@ -215,11 +257,21 @@ header .header1 {
   text-decoration: none;
   color: #470b97;
 }
+@media (max-width: 500px) {
+  .navtag {
+    width: 100%;
+  }
+}
 h1 {
   display: flex;
   text-align: center;
   color: #0f2bce;
   margin: 5% 0;
+}
+@media (max-width: 500px) {
+  h1 {
+    width: 100%;
+  }
 }
 footer {
   display: flex;
@@ -232,6 +284,7 @@ footer P {
 @media (max-width: 500px) {
   footer {
     width: 100%;
+    text-align: center;
   }
 }
 .centerstage {
@@ -249,7 +302,16 @@ footer P {
   align-items: center;
   align-self: center;
   color: #FFFFFF;
-  margin: 0 5%;
+  width: 100%;
+  margin: 0 0 20% 0;
+}
+@media (max-width: 500px) {
+  .centerstage {
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    align-self: center;
+  }
 }
 .placee-holder-for-thinking-code {
   display: flex;
@@ -259,27 +321,59 @@ footer P {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .placee-holder-for-thinking-code .mapfull {
+    width: 100%;
+  }
+}
 .placee-holder-for-thinking-code .mapfull .mapimg {
   border-radius: 50%;
   margin: 5% 0 0 0;
   position: static;
 }
-.placee-holder-for-thinking-code .thinkingcode {
+@media (max-width: 500px) {
+  .placee-holder-for-thinking-code .mapfull .mapimg {
+    width: 100%;
+  }
+}
+.placee-holder-for-thinking-code .mapfull .thinkingcode {
   position: relative;
   bottom: 40px;
   margin: 0 0 0 2%;
 }
-.placee-holder-for-thinking-code .thinkingcode h2 {
+.placee-holder-for-thinking-code .mapfull .thinkingcode h2 {
   color: #aa25c1;
 }
-.placee-holder-for-thinking-code .thinkingcode p {
+@media (max-width: 500px) {
+  .placee-holder-for-thinking-code .mapfull .thinkingcode h2 {
+    margin: 0 0 0 1%;
+  }
+}
+.placee-holder-for-thinking-code .mapfull .thinkingcode p {
   color: #a16779;
 }
-.placee-holder-for-thinking-code .thinkingcode .p0 {
+.placee-holder-for-thinking-code .mapfull .thinkingcode .p0 {
   margin: 0 0 0 5%;
 }
-.placee-holder-for-thinking-code .thinkingcode .p1 {
+@media (max-width: 500px) {
+  .placee-holder-for-thinking-code .mapfull .thinkingcode .p0 {
+    margin: 0 1%;
+  }
+}
+.placee-holder-for-thinking-code .mapfull .thinkingcode .p1 {
   margin: 0 0 0 10%;
+}
+@media (max-width: 500px) {
+  .placee-holder-for-thinking-code .mapfull .thinkingcode .p1 {
+    width: 100%;
+    margin: 0 1%;
+  }
+}
+@media (max-width: 500px) {
+  .placee-holder-for-thinking-code .mapfull .thinkingcode {
+    width: 100%;
+    margin: 10% 0 0 1%;
+  }
 }
 .box .prop,
 .box .Investor,
@@ -288,6 +382,14 @@ footer P {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .box .prop,
+  .box .Investor,
+  .box .Tourism {
+    width: 100%;
+    margin: 5% 0 0 2%;
+  }
 }
 .box .prop P,
 .box .Investor P,
@@ -299,6 +401,12 @@ footer P {
   font-weight: bold;
   color: #aa25c1;
 }
+@media (max-width: 500px) {
+  .box h2 {
+    font-weight: normal;
+    margin: 0 1%;
+  }
+}
 .trusted {
   display: flex;
   flex-direction: column;
@@ -307,6 +415,13 @@ footer P {
   display: flex;
   justify-content: center;
   color: #a16779;
+}
+@media (max-width: 500px) {
+  .trusted .trusttext {
+    width: 100%;
+    margin: 5% 0 5% 0%;
+    text-align: center;
+  }
 }
 .trusted .trustedimg {
   display: flex;
@@ -322,10 +437,21 @@ footer P {
   width: 100%;
   height: auto;
 }
+@media (max-width: 500px) {
+  #headerabt {
+    width: 100%;
+  }
+}
 #headerabt .globeabt {
   display: flex;
   position: relative;
   right: 10%;
+}
+@media (max-width: 500px) {
+  #headerabt .globeabt {
+    width: 100%;
+    display: none;
+  }
 }
 #headerabt .header1abt {
   flex-direction: row;
@@ -336,6 +462,16 @@ footer P {
   margin: 5% 0;
   color: #0f2bce;
 }
+@media (max-width: 500px) {
+  #headerabt .header1abt h1 {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  #headerabt .header1abt {
+    width: 100%;
+  }
+}
 .navtagabt {
   display: flex;
   justify-content: space-evenly;
@@ -345,8 +481,19 @@ footer P {
   text-decoration: none;
   color: #470b97;
 }
+@media (max-width: 500px) {
+  .navtagabt {
+    width: 100%;
+  }
+}
 #bodyabout p {
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  #bodyabout p {
+    width: 100%;
+    font-size: 0.75em;
+  }
 }
 .whoweare {
   display: flex;
@@ -361,20 +508,38 @@ footer P {
   width: 100%;
   height: 80vh;
 }
+@media (max-width: 500px) {
+  .whoweare {
+    width: 100%;
+    height: auto;
+  }
+}
 .whoweare h1 {
-  margin: 3% 0;
+  margin: 0 0 2% 0;
   color: #FFFFFF;
+}
+@media (max-width: 500px) {
+  .whoweare h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5em;
+  }
 }
 .whoweare #p1 {
   color: #FFFFFF;
+  margin: 0 0 15% 0;
+}
+@media (max-width: 500px) {
+  .whoweare #p1 {
+    width: 100%;
+    font-size: 0.75em;
+    margin: 0 0 50% 0;
+  }
 }
 .about img {
   border-radius: 50%;
   margin: 5% 0;
-}
-.about .globeabout {
-  display: flex;
-  justify-content: center;
 }
 .about .projecthead {
   display: flex;
@@ -385,19 +550,43 @@ footer P {
   height: auto;
   width: 40%;
 }
+@media (max-width: 500px) {
+  .about .projecthead img {
+    position: static;
+  }
+}
 .about .projecthead h2 {
   margin: 0 0 1% 0;
   color: #aa25c1;
+}
+@media (max-width: 500px) {
+  .about .projecthead h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
 .about .projecthead p {
   font-size: 2em;
   margin: 0 0 2% 0;
   color: #a16779;
 }
+@media (max-width: 500px) {
+  .about .projecthead p {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .about .projecthead {
+    width: 100%;
+  }
+}
 .about .webb {
   display: flex;
   width: 100%;
-  height: 80vh;
+  height: auto;
   margin: 5% 0 0 0;
 }
 .about .webb p {
@@ -408,10 +597,25 @@ footer P {
   height: auto;
   width: 90%;
 }
+@media (max-width: 500px) {
+  .about .webb img {
+    height: auto;
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .about .webb {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+}
 .about .DataS {
   display: flex;
   width: 100%;
-  height: 80vh;
+  height: auto;
 }
 .about .DataS p {
   font-size: 2rem;
@@ -420,6 +624,19 @@ footer P {
 .about .DataS img {
   height: auto;
   width: 90%;
+}
+@media (max-width: 500px) {
+  .about .DataS img {
+    height: auto;
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .about .DataS {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
 }
 .about .Riley,
 .about .Ronald,
@@ -446,7 +663,7 @@ footer P {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 50vh;
+  height: auto;
 }
 .about .Nick h2,
 .about .Neal h2,

@@ -3,11 +3,33 @@
 
 
 @media @phone{
-    width: 100%;
-    height: 80px;
+  .width100();
+    height: auto;
+    max-width: 100%;
   }
 
 
 .border{
     border: 1px solid red;
+  }
+
+  .disflex{
+    display: flex;
+  }
+
+  .textcenter{
+    text-align: center;
+  }
+
+  .width100{
+    width: 100%;
+  }
+
+  .headerstyl( @center:center,@center1:center,@center2:center,@100:100%,@auto:auto,){
+    .disflex();
+    justify-content: @center;
+    align-items: @center1;
+    text-align: @center2;
+    width: @100;
+    height: @auto;
   }

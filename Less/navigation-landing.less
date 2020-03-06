@@ -1,44 +1,31 @@
 header{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 15vh;
-    width: 100%;
-    height: auto;
+    .headerstyl();
 
     
     @media @phone{
-        width: 100%;
+        .width100();
     }
    
    .globe{
        
-       display: flex;
+    .disflex();
        position: relative;
        right:10%;
 
        
     @media @phone{
-        width: 100%;
+        .width100();
+        display: none;
     }
    }
 
-    .header1{
-     
-        
-        flex-direction: row;
-
-
-
-    }
+   
 
 }
 
 .navtag{
         
-        display: flex;
+    .disflex();
         justify-content: space-evenly;
         margin: 5% 0;
         
@@ -48,12 +35,21 @@ header{
         color: @darkpurple;
     }
 
+    @media @phone{
+        .width100();
+        
+    }
+
 }
 
 h1{
    
-    display: flex;
-    text-align: center;
+    .disflex();
+    .textcenter();
     color: @blue;
     margin: 5% 0;
+
+    @media @phone{
+        .width100();
+    }
 }

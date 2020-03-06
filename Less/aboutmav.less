@@ -1,18 +1,25 @@
 #headerabt{
-    display: flex;
+    .disflex();
     justify-content: center;
     align-items: center;
-    text-align: center;
+    .textcenter();
     height: 15vh;
-    width: 100%;
+    .width100();
     height: auto;
    
-
+    @media @phone{
+        width: 100%;
+    }
     .globeabt{
        
-        display: flex;
+        .disflex();
        position: relative;
        right:10%;
+
+       @media @phone{
+        .width100();
+        display: none;
+    }
     }
 
     .header1abt{
@@ -22,10 +29,20 @@
 
         h1{
            
-            display: flex;
-            text-align: center;
+            .disflex();
+            .textcenter();
             margin: 5% 0;
             color: @blue;
+
+            
+            @media @phone{
+                .width100();
+            }
+        }
+
+        @media @phone{
+            .width100();
+            
         }
 
     }
@@ -34,7 +51,7 @@
 
 .navtagabt{
      
-display: flex;
+    .disflex();
 justify-content: space-evenly;
 margin: 5% 0;
 
@@ -43,5 +60,9 @@ margin: 5% 0;
         text-decoration: none;
         color: @darkpurple;
     }
-
+    
+    @media @phone{
+        .width100();
+        
+    }
 }
